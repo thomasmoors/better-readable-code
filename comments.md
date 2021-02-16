@@ -32,7 +32,8 @@ Better example:
 ```php
 
 /**
-   The shop owner would like a dropdown menu with selectable times with an interval instead of a timepicker
+   The shop owner would like a dropdown menu with selectable times with an interval instead of a timepicker. 
+   This is because a truck leaves every 30 minutes. The function is a little more generic and allows for other intervals to be passed when this requirement ever changes.
  */
 function generateTimeIntervals($from, $to, $interval)
 {
