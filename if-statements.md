@@ -24,12 +24,12 @@ private function unableToDrive()
 
 private function tooOld()
 {
-  return $this->age > self::maxDriverAge;
+  return $this->age > self::MAX_DRIVING_AGE;
 }
 
 private function badEyes()
 {
-  return $this->goodEyes !== 2;
+  return $this->goodEyes !== self::NORMAL_AMOUNT_OF_HUMAN_EYES;
 }
 
 private function onHeavyMedication()
