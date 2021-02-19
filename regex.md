@@ -9,6 +9,7 @@ Note: this still has the downside to be dependent of an external service, but I 
 public function isDutchZipcode()
 {
   // https://regex101.com/r/DBSmh6/1/
+  $re = '/^[0-9]{4} ?[A-Z]{2}$/m';
   preg_match_all($re, $str, $matches, PREG_SET_ORDER, 0);
   return !empty($matches);
 }
